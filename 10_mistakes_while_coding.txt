@@ -1,0 +1,89 @@
+1. No input validation
+The sacred rule of backend devs:
+
+Protect data integrity at all costs.
+
+If you don't validate inappropriate data before storing, it corrupts all your valid data as well.
+
+It's infinitely harder to fix bad data than to prevent bad data.
+
+2. Hardcoded values
+If you want to make your work harder, use magic numbers and strings.
+
+Then every time you need to change it, you need to search for a whole solution where the magic number is.
+
+On the other hand, when you store values in:
+
+a constant variable with a meaningful name
+configuration file
+database
+Your trip to find and replace the value starts and stops at a single place.
+
+3. Tight coupling
+Avoid classes that directly instantiate other classes or rely heavily on specific implementations.
+
+This creates tight coupling.
+
+In those cases, it's difficult to replace or modify components without affecting others.
+
+4. Skipping unit tests
+The busyness paradox:
+
+Developers don't have time to write unit tests.
+But they have time to fix bugs that the tests would have prevented.
+Circus acrobats, when performing their act, use a safety net to guard them from mistakes and falls.
+
+If you don't want to have a circus codebase, start treating unit tests like your safety net.
+
+5. Unhandled Exceptions
+If your API returns full stack trace when something goes wrong, you invite hackers to come and read your code like an open book.
+
+To fix this:
+
+Log the exception.
+Use a generic error message as a response.
+6. Unreadable code
+You spent far more time reading the existing code. Than on changing it.
+
+Prioritize code readability.
+
+Remember:
+
+Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+
+7. Poor Database design
+Poor database structure can slow your application and impact scalability.
+
+Take time to implement and optimize your database structure.
+
+8. Ignoring security
+Always validate user inputs, use secure coding practices, and follow the least privilege principle to protect your application from vulnerabilities.
+
+Take security seriously.
+
+Prevention is cheaper than cure.
+
+9. No Logging and Monitoring
+An application without logging and monitoring is like an airplane without an instrument panel.
+
+Just as an instrument panel is crucial for pilots to monitor the status and performance of the airplane, logging and monitoring are essential to track the health and behavior of an application.
+
+Without it, you may launch your app, but you won't know where the problem is when crashes happen.
+
+10. Reinventing the Wheel
+A deadly mistake rookie C# developers make is reinventing the wheel.
+
+Investing time and energy into creating a component already developed, tested, and widely used within the community.
+
+For example, ORM or custom auth.
+
+And in the end?
+
+You're left with something that barely works.
+
+And you constantly need to improve, maintain, and test.
+
+Value and protect your time. Use proven solutions.
+
+​
+
